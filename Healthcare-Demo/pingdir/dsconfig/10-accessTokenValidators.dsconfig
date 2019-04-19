@@ -1,0 +1,1 @@
+dsconfig create-access-token-validator --validator-name "Mock ATV" --type mock --set "identity-mapper:Exact Match" --set enabled:true
