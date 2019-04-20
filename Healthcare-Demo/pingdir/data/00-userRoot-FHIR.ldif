@@ -1,35 +1,35 @@
 version: 1
 
-dn: ${USER_BASE_DN}
+dn: o=acmehealth.org
 objectClass: organization
 objectClass: top
 o: acmehealth.org
 
-dn: ou=People,${USER_BASE_DN}
+dn: ou=People,o=acmehealth.org
 objectClass: organizationalUnit
 objectClass: top
 ou: People
 description: The container for people; Patients, Persons, Practitioners
 
-dn: ou=Organizations,${USER_BASE_DN}
+dn: ou=Organizations,o=acmehealth.org
 objectClass: organizationalUnit
 objectClass: top
 ou: Organizations
 description: The container for healthcare organizations
 
-dn: ou=Groups,${USER_BASE_DN}
+dn: ou=Groups,o=acmehealth.org
 objectClass: organizationalUnit
 objectClass: top
 ou: Groups
 description: The container for non-admin groups
 
-dn: ou=Administrative Groups,${USER_BASE_DN}
+dn: ou=Administrative Groups,o=acmehealth.org
 objectClass: organizationalUnit
 objectClass: top
 ou: Administrative Groups
 description: The container for Admin groups
 
-dn: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,${USER_BASE_DN}
+dn: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,o=acmehealth.org
 objectClass: fhirOrganization
 objectClass: organization
 objectClass: top
@@ -42,7 +42,7 @@ fhirActive: TRUE
 fhirEntitlement: { "type":"implicit", "id":"urn:ping:entitlement:fhir:app:CSR", "value":[ "read", "search", "create", "modify" ] }
 fhirRole: { "type":"implicit", "id":"urn:ping:role:fhir:organization:admin", "value":[ "read", "search", "create", "modify" ] }
 
-dn: entryUUID=d205f799-210f-4036-8761-bc3d281239aa,ou=People,${USER_BASE_DN}
+dn: entryUUID=d205f799-210f-4036-8761-bc3d281239aa,ou=People,o=acmehealth.org
 objectClass: fhirPatient
 objectClass: fhirPerson
 objectClass: fhirUser
@@ -74,7 +74,7 @@ fhirMaritalStatus: {"coding":"M","text":"Married"}
 fhirMultipleBirth: FALSE
 fhirMultipleBirthInteger: 1
 fhirName: { "use":"offical", "text":"name", "family":"Beck", "given":"Jeffrey", "prefix":"Mr", "suffix":"Esq", "period":"1944-06-24" }
-fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,${USER_BASE_DN}
+fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,o=acmehealth.org
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirPersona: { "type":"social", "id":"Facebook", "primary":true, "value":"jeff.beck@beckola.com" }
 fhirRegion: USA
@@ -88,12 +88,12 @@ fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"201712
 givenName: Jeffrey
 mail: jeff.beck@beckola.com
 o: Acme Health
-seeAlso: ${USER_BASE_DN}
+seeAlso: o=acmehealth.org
 sn: Beck
 telephoneNumber: +1555-555-1212
 userPassword:: e1NTSEEyNTZ9di92RFFpRktTOWhhQ0FyTitOTzBoV0lDSDJVQ0FwMnFqTWxLS1VuMXVnRFpkRUV4T0JzSjhBPT0=
 
-dn: entryUUID=103341be-b937-47b2-9ea1-660468b5fc63,ou=People,${USER_BASE_DN}
+dn: entryUUID=103341be-b937-47b2-9ea1-660468b5fc63,ou=People,o=acmehealth.org
 objectClass: fhirPerson
 objectClass: fhirUser
 objectClass: top
@@ -101,7 +101,7 @@ uid: test
 cn: test
 description: test basic entry
 userPassword:: e1NTSEEyNTZ9YXI1NU9vSXJYUUhDQUFxUmtmNU5BdFJ3bzNReHBFV2NTcm95WjlLOW4zeVQwcnJ6SmpuN0x3PT0=
-dn: entryUUID=eadf9f4e-c198-4665-9339-1f34e379cf30,ou=Organizations,${USER_BASE_DN}
+dn: entryUUID=eadf9f4e-c198-4665-9339-1f34e379cf30,ou=Organizations,o=acmehealth.org
 objectClass: fhirOrganization
 objectClass: organization
 objectClass: top
@@ -110,7 +110,7 @@ displayName: Acme Labs
 fhirEntitlement: { "type":"implicit", "id":"urn:ping:entitlement:fhir:app:CSR", "value":[ "read", "search", "create", "modify" ] }
 fhirRole: { "type":"implicit", "id":"urn:ping:role:fhir:organization:admin", "value":[ "read", "search", "create", "modify" ] }
 
-dn: entryUUID=ff99e13b-6ff8-40ef-9ce5-1cc5ef891d3e,ou=People,${USER_BASE_DN}
+dn: entryUUID=ff99e13b-6ff8-40ef-9ce5-1cc5ef891d3e,ou=People,o=acmehealth.org
 objectClass: fhirPatient
 objectClass: fhirPerson
 objectClass: fhirUser
@@ -142,7 +142,7 @@ fhirMaritalStatus: {"coding":"M","text":"Married"}
 fhirMultipleBirth: TRUE
 fhirMultipleBirthInteger: 2
 fhirName: { "use":"offical", "text":"name", "family":"Beck", "given":"Sandra", "prefix":"Mrs", "suffix":"", "period":"1944-06-24" }
-fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,${USER_BASE_DN}
+fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,o=acmehealth.org
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirPersona: { "type":"social", "id":"Facebook", "primary":true, "value":"jeff.beck@beckola.com" }
 fhirRegion: USA
@@ -156,12 +156,12 @@ fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"201712
 givenName: Sandra
 mail: sandra.beck@beckola.com
 o: Acme Health
-seeAlso: ${USER_BASE_DN}
+seeAlso: o=acmehealth.org
 sn: Beck
 telephoneNumber: +1555-555-7777
 userPassword:: e1NTSEEyNTZ9di92RFFpRktTOWhhQ0FyTitOTzBoV0lDSDJVQ0FwMnFqTWxLS1VuMXVnRFpkRUV4T0JzSjhBPT0=
 
-dn: entryUUID=3008e96b-fda0-4cfe-ad68-b721c908a280,ou=People,${USER_BASE_DN}
+dn: entryUUID=3008e96b-fda0-4cfe-ad68-b721c908a280,ou=People,o=acmehealth.org
 objectClass: fhirPerson
 objectClass: fhirUser
 objectClass: top
@@ -178,7 +178,7 @@ fhirEntitlement: { "type":"implicit", "id":"urn:ping:entitlement:fhir:app:CSR", 
 fhirEntitlement: { "type":"explicit", "id":"urn:ping:entitlement:fhir:portal", "value":[ "read", "search" ] }
 fhirLastLoginType: direct
 fhirName: { "use":"offical", "text":"name", "family":"Beck", "given":"Jeffrey", "prefix":"Mr", "suffix":"Esq", "period":"1944-06-24" }
-fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,${USER_BASE_DN}
+fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,o=acmehealth.org
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirRegion: USA
 fhirRole: { "type":"explicit", "id":"urn:ping:role:fhir:patient:patient", "value":[ "read", "search", "create", "modify" ] }
@@ -189,19 +189,19 @@ fhirType: CSR
 givenName: csr1
 mail: csr1@acmehealth.org
 o: Acme Health
-seeAlso: ${USER_BASE_DN}
+seeAlso: o=acmehealth.org
 sn: CSR
 telephoneNumber: +1555-555-9999
 userPassword:: e1NTSEEyNTZ9di92RFFpRktTOWhhQ0FyTitOTzBoV0lDSDJVQ0FwMnFqTWxLS1VuMXVnRFpkRUV4T0JzSjhBPT0=
 
-dn: cn=admin,ou=Administrative Groups,${USER_BASE_DN}
+dn: cn=admin,ou=Administrative Groups,o=acmehealth.org
 objectClass: groupOfUniqueNames
 objectClass: top
 cn: admin
-uniqueMember: entryUUID=103341be-b937-47b2-9ea1-660468b5fc63,ou=People,${USER_BASE_DN}
+uniqueMember: entryUUID=103341be-b937-47b2-9ea1-660468b5fc63,ou=People,o=acmehealth.org
 uniqueMember: cn=directory manager
 
-dn: cn=PFAdminGroup,ou=Administrative Groups,${USER_BASE_DN}
+dn: cn=PFAdminGroup,ou=Administrative Groups,o=acmehealth.org
 objectClass: groupOfUniqueNames
 objectClass: top
 cn: admin

@@ -1,4 +1,4 @@
-dn: uid=administrator,ou=People,${USER_BASE_DN}
+dn: uid=administrator,ou=People,o=acmehealth.org
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -10,7 +10,7 @@ uid: administrator
 userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
 
-dn: uid=auditor,ou=People,${USER_BASE_DN}
+dn: uid=auditor,ou=People,o=acmehealth.org
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
