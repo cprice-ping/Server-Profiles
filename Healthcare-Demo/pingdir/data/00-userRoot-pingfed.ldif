@@ -8,6 +8,7 @@ sn: PingFederate
 cn: Administrator
 uid: administrator
 userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
 
 dn: uid=auditor,ou=People,o=acmehealth.org
 objectClass: top
@@ -19,3 +20,4 @@ sn: PingFederate
 cn: Auditor
 uid: auditor
 userPassword: 2FederateM0re
+pf-connected-identity: auth-source=pf-local-identity:user-id=auditor
