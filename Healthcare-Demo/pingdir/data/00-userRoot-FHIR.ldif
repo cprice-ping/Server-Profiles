@@ -101,6 +101,7 @@ uid: test
 cn: test
 description: test basic entry
 userPassword:: e1NTSEEyNTZ9YXI1NU9vSXJYUUhDQUFxUmtmNU5BdFJ3bzNReHBFV2NTcm95WjlLOW4zeVQwcnJ6SmpuN0x3PT0=
+
 dn: entryUUID=eadf9f4e-c198-4665-9339-1f34e379cf30,ou=Organizations,o=acmehealth.org
 objectClass: fhirOrganization
 objectClass: organization
