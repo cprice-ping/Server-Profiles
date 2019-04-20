@@ -212,7 +212,7 @@ dn: cn=PFCryptoGroup,ou=Administrative Groups,o=acmehealth.org
 objectClass: top
 objectClass: groupOfNames
 cn: PFCryptoGroup
-member: uid=administrator,ou=Administrative Groups,ou=people,o=acmehealth.org
+member: uid=administrator,ou=people,o=acmehealth.org
 
 dn: cn=PFAuditorGroup,ou=Administrative Groups,o=acmehealth.org
 objectClass: top
