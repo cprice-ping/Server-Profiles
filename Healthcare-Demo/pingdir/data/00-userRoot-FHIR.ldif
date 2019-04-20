@@ -206,4 +206,22 @@ dn: cn=PFAdminGroup,ou=Administrative Groups,o=acmehealth.org
 objectClass: groupOfUniqueNames
 objectClass: top
 cn: admin
-uniqueMember: cn=administrator
+uniqueMember: uid=administrator,ou=People,o=acmehealth.org
+
+dn: cn=PFCryptoGroup,ou=Administrative Groups,o=acmehealth.org
+objectClass: top
+objectClass: groupOfNames
+cn: PFCryptoGroup
+member: uid=administrator,ou=Administrative Groups,ou=people,o=acmehealth.org
+
+dn: cn=PFAuditorGroup,ou=Administrative Groups,o=acmehealth.org
+objectClass: top
+objectClass: groupOfNames
+cn: PFAuditorGroup
+member: uid=auditor,ou=people,o=acmehealth.org
+
+dn: cn=PFUserAdminGroup,ou=Administrative Groups,o=acmehealth.org
+objectClass: top
+objectClass: groupOfNames
+cn: PFUserAdminGroup
+member: uid=administrator,ou=people,o=acmehealth.org
