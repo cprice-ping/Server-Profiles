@@ -5,6 +5,12 @@ objectClass: organization
 objectClass: top
 o: acmehealth.org
 
+dn: ou=Consents,o=acmehealth.org
+objectClass: organizationalUnit
+objectClass: top
+ou: People
+description: The container for Consent records
+
 dn: ou=People,o=acmehealth.org
 objectClass: organizationalUnit
 objectClass: top
@@ -87,7 +93,7 @@ fhirTimeZone: EST
 fhirType: patient
 fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"20171219012052Z", "value":"http://acmehealth.com/welcome" }
 givenName: Jeffrey
-mail: jeff.beck@beckola.com
+mail: jeff.beck@mailinator.com
 o: Acme Health
 seeAlso: o=acmehealth.org
 sn: Beck
@@ -160,7 +166,7 @@ fhirTimeZone: EST
 fhirType: patient
 fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"20171219012052Z", "value":"http://acmehealth.com/welcome" }
 givenName: Sandra
-mail: sandra.beck@beckola.com
+mail: sandra.beck@mailiantor.com
 o: Acme Health
 seeAlso: o=acmehealth.org
 sn: Beck
