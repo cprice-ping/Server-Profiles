@@ -1,0 +1,1 @@
+dsconfig set-connection-handler-prop --handler-name "HTTPS Connection Handler" --add http-servlet-extension:SCIM --reset web-application-extension
