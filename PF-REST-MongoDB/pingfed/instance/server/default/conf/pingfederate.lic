@@ -1,0 +1,14 @@
+ID=1182793
+Organization=68
+Product=PingFederate
+Version=9.0
+IssueDate=2019-04-10
+EnforcementType=3
+ExpirationDate=2019-05-10
+Tier=Subscription
+SaasProvisioning=true
+WSTrustSTS=true
+OAuth=true
+SignCode=FF07
+Signature=302C02145EE759C08AEDE3518B7399128CF0A21AE4C7EF5A021439B4885BBC67CE2E33DB3B778A91DDADCC4E4F08
+
