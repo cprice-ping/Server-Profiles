@@ -63,7 +63,7 @@ fhirAccountVerified: TRUE
 fhirActive: TRUE
 fhirAddress: { "use":"home", "type":"address", "text":"home address", "line":"123 Stratocaster", "city":"Los Angeles", "district":"US", "state":"CA", "postalCode":"80001", "country":"USA", "period":"2010-01-01" }
 fhirBirthDate: 1944-06-24
-fhirCommOpts: { "type":"preference", "id":"urn:ciam:Opt:EmailMarketing", "destination":"user.1@example.com", "destinationType":"email", "polarityOpt":"out", "timeStamp":"2016-11-12T13:10:22Z", "collector":"urn:pingidentity:App:Mobile:3", "frequency":"weekly;Friday" }
+fhirCommOpts: { "type":"preference", "id":"urn:ciam:Opt:EmailMarketing", "destination":"jbeck@beckola.com", "destinationType":"email", "polarityOpt":true, "timeStamp":"2016-11-12T13:10:22Z", "collector":"urn:pingidentity:App:Mobile:3", "frequency":"weekly;Friday" }
 fhirCommunication: { "language":"English", "preferred":true }
 fhirContact: { "relationship":"spouse", "name":"Sandra Beck", "telecom":"<ContactPoint>", "address":"<Address>", "gender":"female", "organization":"Acme Health", "period":"2010-01-01" }
 fhirContentOpts: { "type":"preference", "id":"urn:ciam:Opt:Newsletters", "polarityOpt":"out", "timeStamp":"2015-11-28T15:47:29Z", "collector":"urn:pingidentity:App:Mobile:3" }
@@ -73,7 +73,7 @@ fhirDeviceID: { "type":"user_agent", "id":"urn:ping:fhir:device:fingerprint", "t
 fhirEntitlement: { "type":"explicit", "id":"urn:ping:entitlement:fhir:portal", "value":[ "read", "search" ] }
 fhirFlag: { "resourceType":"Flag", "identifier":"d205f799-210f-4036-8761-bc3d281239aa", "status":"active", "category":"TEST", "code":"XYZ123", "subject":"TEST", "period":"2018-01-01", "encounter":"1234567890", "author":"Jimi Hendrix" }
 fhirGender: male
-fhirGeneralPractitioner: { "reference":"Doctor John", "identifier":"cdabf364-2bda-4dfb-b6da-ec109c20768d", "display":"Doctor John" }
+fhirGeneralPractitioner: { "reference":"Doctor John", "identifier":"1eaed605-c824-477a-a2ce-9c2a160c170c", "display":"Doctor John" }
 fhirIdentifier: { "use":"usual", "type":"MR", "system":"urn:oid:1.2.36.146.595.217.0.1", "value":"d205f799-210f-4036-8761-bc3d281239aa", "period":"2001-05-06", "assigner":"Acme Health" }
 fhirLastLoginType: directfhirLink: { "target":"5be3c2ea-66ea-4b51-8c97-e9af0e89e74c", "assurance":"1" }
 fhirManagingOrg: { "reference":"xyz123", "identifier":"5be3c2ea-66ea-4b51-8c97-e9af0e89e74c", "display":"Acme Health" }
@@ -136,7 +136,7 @@ fhirAccountVerified: TRUE
 fhirActive: TRUE
 fhirAddress: { "use":"home", "type":"address", "text":"home address", "line":"123 Stratocaster", "city":"Los Angeles", "district":"US", "state":"CA", "postalCode":"80001", "country":"USA", "period":"2010-01-01" }
 fhirBirthDate: 1954-01-01
-fhirCommOpts: { "type":"preference", "id":"urn:ciam:Opt:EmailMarketing", "destination":"user.1@example.com", "destinationType":"email", "polarityOpt":"out", "timeStamp":"2016-11-12T13:10:22Z", "collector":"urn:pingidentity:App:Mobile:3", "frequency":"weekly;Friday" }
+fhirCommOpts: { "type":"preference", "id":"urn:ciam:Opt:EmailMarketing", "destination":"sandra.beck@beckola.com", "destinationType":"email", "polarityOpt":"out", "timeStamp":"2016-11-12T13:10:22Z", "collector":"urn:pingidentity:App:Mobile:3", "frequency":"weekly;Friday" }
 fhirCommunication: { "language":"English", "preferred":true }
 fhirContact: { "relationship":"spouse", "name":"Jeffrey Beck", "telecom":"<ContactPoint>", "address":"<Address>", "gender":"female", "organization":"Acme Health", "period":"2010-01-01" }
 fhirContentOpts: { "type":"preference", "id":"urn:ciam:Opt:Newsletters", "polarityOpt":"out", "timeStamp":"2015-11-28T15:47:29Z", "collector":"urn:pingidentity:App:Mobile:3" }
@@ -146,8 +146,9 @@ fhirDeviceID: { "type":"user_agent", "id":"urn:ping:fhir:device:fingerprint", "t
 fhirEntitlement: { "type":"explicit", "id":"urn:ping:entitlement:fhir:portal", "value":[ "read", "search" ] }
 fhirFlag: { "resourceType":"Flag", "identifier":"d205f799-210f-4036-8761-bc3d281239aa", "status":"active", "category":"TEST", "code":"XYZ123", "subject":"TEST", "period":"2018-01-01", "encounter":"1234567890", "author":"Jimi Hendrix" }
 fhirGender: female
-fhirGeneralPractitioner: { "reference":"Doctor John", "identifier":"cdabf364-2bda-4dfb-b6da-ec109c20768d", "display":"Doctor John" }
-fhirIdentifier: { "use":"usual", "type":"MR", "system":"urn:oid:1.2.36.146.595.217.0.1", "value":"d205f799-210f-4036-8761-bc3d281239aa", "period":"2001-05-06", "assigner":"Acme Health" }
+fhirGeneralPractitioner: { "reference":"Doctor John", "identifier":"1eaed605-c824-477a-a2ce-9c2a160c170c", "display":"Doctor John" }
+fhirIdentifier: { "use":"usual", "type":"MR", "system":"urn:oid:1.2.36.146.595.217.0.1", "value":"TUKRxL29bxE9lyAcdTIyrWC6Ln5gZ-z7CLr2r-2SY964B", "period":"2001-05-06", "assigner":"Acme Health" }
+fhirIdentifier: { "use":"usual", "type":"MR", "system":"urn:oid:1.2.36.146.595.217.0.1", "value":"4342009", "period":"2001-05-06", "assigner":"Acme Health" }
 fhirLastLoginType: directfhirLink: { "target":"5be3c2ea-66ea-4b51-8c97-e9af0e89e74c", "assurance":"1" }
 fhirManagingOrg: { "reference":"xyz123", "identifier":"5be3c2ea-66ea-4b51-8c97-e9af0e89e74c", "display":"Acme Health" }
 fhirMaritalStatus: {"coding":"M","text":"Married"}
@@ -158,9 +159,9 @@ fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizati
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirPersona: { "type":"social", "id":"Facebook", "primary":true, "value":"jeff.beck@beckola.com" }
 fhirRegion: USA
-fhirRelatedPerson: { "identifier":"e0d919be-9f1d-4145-b1eb-b80a6b35346e", "relationship":"spouse" }
+fhirRelatedPerson: { "identifier":"d205f799-210f-4036-8761-bc3d281239aa", "relationship":"spouse" }
 fhirRole: { "type":"explicit", "id":"urn:ping:role:fhir:patient:patient", "value":[ "read", "search", "create", "modify" ] }
-fhirTelecom: { "system":"email", "value":"jeff.beck@beckola.com", "use":"home", "rank":"1", "period":"2010-01-01" }
+fhirTelecom: { "system":"email", "value":"sandra.beck@beckola.com", "use":"home", "rank":"1", "period":"2010-01-01" }
 fhirTermsOfService: { "type":"tos", "id":"urn:ping:fhir:tos:user:3", "timeStamp":"20171219012052Z", "collector":"urn:ping:fhir:app:mobile:3" }
 fhirTimeZone: EST
 fhirType: patient
@@ -173,6 +174,41 @@ sn: Beck
 telephoneNumber: +1555-555-7777
 userPassword: password
 pf-connected-identity: auth-source=pf-local-identity:user-id=sbeck
+
+dn: entryUUID=1eaed605-c824-477a-a2ce-9c2a160c170c,ou=People,o=acmehealth.org
+objectClass: pf-connected-identities
+objectClass: fhirPractitioner
+objectClass: fhirPerson
+objectClass: fhirUser
+objectClass: top
+uid: drjohn
+cn: drjohn
+description: A Healthcare Practitioner
+displayName: Dr John
+employeeNumber: 345345345
+employeeType: Practitioner
+fhirAccountNumber: 345345345
+fhirAccountVerified: TRUE
+fhirActive: TRUE
+fhirEntitlement: { "type":"implicit", "id":"urn:ping:entitlement:fhir:app:CSR", "value":[ "read", "search", "create", "modify" ] }
+fhirEntitlement: { "type":"explicit", "id":"urn:ping:entitlement:fhir:portal", "value":[ "read", "search" ] }
+fhirLastLoginType: direct
+fhirName: { "use":"offical", "text":"name", "family":"Doe", "given":"John", "prefix":"Mr", "suffix":"Esq", "period":"1944-06-24" }
+fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organizations,o=acmehealth.org
+fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
+fhirRegion: USA
+fhirRole: { "type":"implicit", "id":"urn:ping:role:fhir:organization:admin", "value":[ "read", "search", "create", "modify" ] }
+fhirTelecom: { "system":"email", "value":"drjohn@acmehealth.org", "use":"work", "rank":"1", "period":"2010-01-01" }
+fhirTimeZone: EST
+fhirType: Practitioner
+givenName: John
+mail: drjohn@acmehealth.org
+o: Acme Health
+seeAlso: o=acmehealth.org
+sn: Doe
+telephoneNumber: +1555-555-9999
+userPassword: password
+pf-connected-identity: auth-source=pf-local-identity:user-id=drjohn
 
 dn: entryUUID=3008e96b-fda0-4cfe-ad68-b721c908a280,ou=People,o=acmehealth.org
 objectClass: pf-connected-identities
