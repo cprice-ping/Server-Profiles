@@ -15,7 +15,7 @@ dsconfig create-external-server --server-name "Epic FHIR Sandbox" --type api --s
 
 dsconfig create-external-server --server-name "Healthcare Demo PD" --type api --set base-url:https://int-docker.anyhealth-demo.ping-eng.com:1443 --set user-name:cn=administrator --set password:AADcp21yk8T5LCl1YsgeBUkbOzRQZ/yuZiE=
 
-dsconfig create-external-server --server-name PAP --type policy --set base-url:http://int-dg.anyhealth-demo.ping-eng.com:8080 --set x-user-id:symphonic --set x-decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1 --set "x-branch:Default Policies"
+dsconfig create-external-server --server-name PAP --type policy --set base-url:http://int-dg.anyhealth-demo.ping-eng.com:8080 --set hostname-verification-method:allow-all --set x-user-id:symphonic --set x-decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1 --set "x-branch:Default Policies"
 
 dsconfig create-access-token-validator --validator-name "Mock ATV" --type mock --set enabled:true
 
