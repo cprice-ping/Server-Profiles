@@ -1,4 +1,4 @@
-dn: uid=administrator,ou=People,o=${USER_BASE_DN}
+dn: uid=administrator,ou=People,${USER_BASE_DN}
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -9,7 +9,7 @@ cn: Administrator
 uid: administrator
 userPassword: 2FederateM0re
 
-dn: uid=auditor,ou=People,o=${USER_BASE_DN}
+dn: uid=auditor,ou=People,${USER_BASE_DN}
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
