@@ -1,29 +1,5 @@
 version: 1
 
-dn: uid=administrator,ou=People,${USER_BASE_DN}
-objectClass: pf-connected-identities
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-cn: Administrator
-sn: PingFederate
-uid: administrator
-userPassword:: e1NTSEEyNTZ9ak9HVG1wUnNBUGZKSWY3aHk1ZWhxaFlvNHlyWDkvdkVQelpyd
- lhvOG94ZHdnZlRZbzdCQzdnPT0=
-
-dn: uid=auditor,ou=People,${USER_BASE_DN}
-objectClass: pf-connected-identities
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-cn: Auditor
-sn: PingFederate
-uid: auditor
-userPassword:: e1NTSEEyNTZ9Y0VxdTVwWjJjVDMvR0ZRakJHbFVZeXVmbU00dzNjQU9wd0Z2U
- DV0VktTSkVJZDkvckVPbjhBPT0=
-
 dn: entryUUID=d205f799-210f-4036-8761-bc3d281239aa,ou=People,${USER_BASE_DN}
 objectClass: fhirPatient
 objectClass: pf-connected-identities
@@ -203,8 +179,7 @@ userPassword:: e1NTSEEyNTZ9WFM3NE9xWmh3UnA3MEtRVEk1MmhjeTF3KzBnOGRSRFJsZS91N
  npzWUVmajhBTWFHU3l3N1N3PT0=
 pf-connected-identity: auth-source=pf-local-identity:user-id=sbeck
 
-dn: entryUUID=1eaed605-c824-477a-a2ce-9c2a160c170c,ou=People,Anyhealth.or
- g
+dn: entryUUID=1eaed605-c824-477a-a2ce-9c2a160c170c,ou=People,${USER_BASE_DN}
 objectClass: fhirPractitioner
 objectClass: pf-connected-identities
 objectClass: fhirPerson
