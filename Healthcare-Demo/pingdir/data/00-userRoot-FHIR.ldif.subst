@@ -91,5 +91,5 @@ member: uid=administrator,ou=people,${USER_BASE_DN}
 dn: ${USER_BASE_DN}
 changetype: modify
 add: aci
-aci: (targetattr!=“userPassword”)(version 3.0; acl “Allow self-read access to all user attributes except the password”; allow (read,search,compare) userdn=“ldap:///self”;)
-aci: (targetattr=“*”)(version 3.0; acl “Allow users to update their own entries”; allow (write) userdn=“ldap:///self”;)
+aci: (targetattr!="userPassword")(version 3.0; acl "Allow self-read access to all user attributes except the password"; allow (read,search,compare) userdn="ldap:///self";)
+aci: (targetattr="*")(version 3.0; acl "Allow users to update their own entries"; allow (write) userdn="ldap:///self";)
