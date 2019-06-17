@@ -24,8 +24,7 @@ uid: auditor
 userPassword:: e1NTSEEyNTZ9Y0VxdTVwWjJjVDMvR0ZRakJHbFVZeXVmbU00dzNjQU9wd0Z2U
  DV0VktTSkVJZDkvckVPbjhBPT0=
 
-dn: entryUUID=d205f799-210f-4036-8761-bc3d281239aa,ou=People,o=acmehealth.or
- g
+dn: entryUUID=d205f799-210f-4036-8761-bc3d281239aa,ou=People,o=${USER_BASE_DN}
 objectClass: fhirPatient
 objectClass: pf-connected-identities
 objectClass: fhirPerson
@@ -69,11 +68,11 @@ fhirGeneralPractitioner: { "reference":"Doctor John", "identifier":"1eaed605
  -c824-477a-a2ce-9c2a160c170c", "display":"Doctor John" }
 fhirIdentifier: { "use":"usual", "type":"MR", "system":"urn:oid:1.2.36.146.5
  95.217.0.1", "value":"d205f799-210f-4036-8761-bc3d281239aa", "period":"2001
- -05-06", "assigner":"Acme Health" }
+ -05-06", "assigner":"Any Health" }
 fhirLastLoginType: directfhirLink: { "target":"5be3c2ea-66ea-4b51-8c97-e9af0
  e89e74c", "assurance":"1" }
 fhirManagingOrg: { "reference":"xyz123", "identifier":"5be3c2ea-66ea-4b51-8c
- 97-e9af0e89e74c", "display":"Acme Health" }
+ 97-e9af0e89e74c", "display":"Any Health" }
 fhirMaritalStatus: {"coding":"M","text":"Married"}
 fhirMultipleBirth: FALSE
 fhirMultipleBirthInteger: 1
@@ -96,10 +95,10 @@ fhirTermsOfService: { "type":"tos", "id":"urn:ping:fhir:tos:user:3", "timeSt
 fhirTimeZone: EST
 fhirType: patient
 fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"20
- 171219012052Z", "value":"http://acmehealth.com/welcome" }
+ 171219012052Z", "value":"http://Anyhealth.com/welcome" }
 givenName: Jeffrey
 mail: jeff.beck@mailinator.com
-o: Acme Health
+o: Any Health
 seeAlso: o=${USER_BASE_DN}
 sn: Beck
 telephoneNumber: +1555-555-1212
@@ -107,8 +106,7 @@ userPassword:: e1NTSEEyNTZ9Z25TOHZHT2ZhTGdrN0VhVVhYMWQ0Qy9FK1htRjMwWHZmMkZIS
  kNNdlJDR2luMWRDQjdUbExnPT0=
 pf-connected-identity: auth-source=pf-local-identity:user-id=jbeck
 
-dn: entryUUID=103341be-b937-47b2-9ea1-660468b5fc63,ou=People,o=acmehealth.or
- g
+dn: entryUUID=103341be-b937-47b2-9ea1-660468b5fc63,ou=People,o=${USER_BASE_DN}
 objectClass: pf-connected-identities
 objectClass: fhirPerson
 objectClass: fhirUser
@@ -120,8 +118,7 @@ userPassword:: e1NTSEEyNTZ9N2pwaFhxL09kNUZ0bW5kbXNURGwwWmh1R3VRKzhKdm82THQxZ
  DhFMmFjL2wxdmNVOFlxdmNRPT0=
 pf-connected-identity: auth-source=pf-local-identity:user-id=test
 
-dn: entryUUID=ff99e13b-6ff8-40ef-9ce5-1cc5ef891d3e,ou=People,o=acmehealth.or
- g
+dn: entryUUID=ff99e13b-6ff8-40ef-9ce5-1cc5ef891d3e,ou=People,o=${USER_BASE_DN}
 objectClass: fhirPatient
 objectClass: pf-connected-identities
 objectClass: fhirPerson
@@ -165,14 +162,14 @@ fhirGeneralPractitioner: { "reference":"Doctor John", "identifier":"1eaed605
  -c824-477a-a2ce-9c2a160c170c", "display":"Doctor John" }
 fhirIdentifier: { "use":"usual", "type":"CernerFHIR", "system":"urn:oid:1.2.
  36.146.595.217.0.1", "value":"4342009", "period":"2001-05-06", "assigner":"
- Acme Health" }
+ Any Health" }
 fhirIdentifier: { "use":"usual", "type":"EpicFHIR", "system":"urn:oid:1.2.36
  .146.595.217.0.1", "value":"TUKRxL29bxE9lyAcdTIyrWC6Ln5gZ-z7CLr2r-2SY964B",
-  "period":"2001-05-06", "assigner":"Acme Health" }
+  "period":"2001-05-06", "assigner":"Any Health" }
 fhirLastLoginType: directfhirLink: { "target":"5be3c2ea-66ea-4b51-8c97-e9af0
  e89e74c", "assurance":"1" }
 fhirManagingOrg: { "reference":"xyz123", "identifier":"5be3c2ea-66ea-4b51-8c
- 97-e9af0e89e74c", "display":"Acme Health" }
+ 97-e9af0e89e74c", "display":"Any Health" }
 fhirMaritalStatus: {"coding":"M","text":"Married"}
 fhirMultipleBirth: TRUE
 fhirMultipleBirthInteger: 2
@@ -195,10 +192,10 @@ fhirTermsOfService: { "type":"tos", "id":"urn:ping:fhir:tos:user:3", "timeSt
 fhirTimeZone: EST
 fhirType: patient
 fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"20
- 171219012052Z", "value":"http://acmehealth.com/welcome" }
+ 171219012052Z", "value":"http://Anyhealth.com/welcome" }
 givenName: Sandra
 mail: sandra.beck@mailiantor.com
-o: Acme Health
+o: Any Health
 seeAlso: o=${USER_BASE_DN}
 sn: Beck
 telephoneNumber: +1555-555-7777
@@ -206,7 +203,7 @@ userPassword:: e1NTSEEyNTZ9WFM3NE9xWmh3UnA3MEtRVEk1MmhjeTF3KzBnOGRSRFJsZS91N
  npzWUVmajhBTWFHU3l3N1N3PT0=
 pf-connected-identity: auth-source=pf-local-identity:user-id=sbeck
 
-dn: entryUUID=1eaed605-c824-477a-a2ce-9c2a160c170c,ou=People,o=acmehealth.or
+dn: entryUUID=1eaed605-c824-477a-a2ce-9c2a160c170c,ou=People,o=Anyhealth.or
  g
 objectClass: fhirPractitioner
 objectClass: pf-connected-identities
@@ -241,7 +238,7 @@ fhirTimeZone: EST
 fhirType: Practitioner
 givenName: John
 mail: drjohn@${USER_BASE_DN}
-o: Acme Health
+o: Any Health
 seeAlso: o=${USER_BASE_DN}
 sn: Doe
 telephoneNumber: +1555-555-9999
@@ -249,8 +246,7 @@ userPassword:: e1NTSEEyNTZ9cWVnN0laNytmYjFOemFibjZ6WXpkaDh2bXRDVHZSZ2RxMU5zW
  FcvRWJaeEs3Q0xNSGcvMm93PT0=
 pf-connected-identity: auth-source=pf-local-identity:user-id=drjohn
 
-dn: entryUUID=3008e96b-fda0-4cfe-ad68-b721c908a280,ou=People,o=acmehealth.or
- g
+dn: entryUUID=3008e96b-fda0-4cfe-ad68-b721c908a280,ou=People,o=${USER_BASE_DN}
 objectClass: pf-connected-identities
 objectClass: fhirPerson
 objectClass: fhirUser
@@ -285,7 +281,7 @@ fhirTimeZone: EST
 fhirType: CSR
 givenName: csr1
 mail: csr1@${USER_BASE_DN}
-o: Acme Health
+o: ${USER_BASE_DN} Health
 seeAlso: o=${USER_BASE_DN}
 sn: CSR
 telephoneNumber: +1555-555-9999
