@@ -1,12 +1,6 @@
 version: 1
 
-dn: ou=People,o=acmehealth.org
-objectClass: organizationalUnit
-objectClass: top
-ou: People
-description: The container for people; Patients, Persons, Practitioners
-
-dn: uid=administrator,ou=People,o=acmehealth.org
+dn: uid=administrator,ou=People,o=${USER_BASE_DN}
 objectClass: pf-connected-identities
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
@@ -18,7 +12,7 @@ uid: administrator
 userPassword:: e1NTSEEyNTZ9ak9HVG1wUnNBUGZKSWY3aHk1ZWhxaFlvNHlyWDkvdkVQelpyd
  lhvOG94ZHdnZlRZbzdCQzdnPT0=
 
-dn: uid=auditor,ou=People,o=acmehealth.org
+dn: uid=auditor,ou=People,o=${USER_BASE_DN}
 objectClass: pf-connected-identities
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
@@ -86,7 +80,7 @@ fhirMultipleBirthInteger: 1
 fhirName: { "use":"offical", "text":"name", "family":"Beck", "given":"Jeffre
  y", "prefix":"Mr", "suffix":"Esq", "period":"1944-06-24" }
 fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organi
- zations,o=acmehealth.org
+ zations,o=${USER_BASE_DN}
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirPersona: { "type":"social", "id":"Facebook", "primary":true, "value":"je
  ff.beck@beckola.com" }
@@ -106,7 +100,7 @@ fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"20
 givenName: Jeffrey
 mail: jeff.beck@mailinator.com
 o: Acme Health
-seeAlso: o=acmehealth.org
+seeAlso: o=${USER_BASE_DN}
 sn: Beck
 telephoneNumber: +1555-555-1212
 userPassword:: e1NTSEEyNTZ9Z25TOHZHT2ZhTGdrN0VhVVhYMWQ0Qy9FK1htRjMwWHZmMkZIS
@@ -185,7 +179,7 @@ fhirMultipleBirthInteger: 2
 fhirName: { "use":"offical", "text":"name", "family":"Beck", "given":"Sandra
  ", "prefix":"Mrs", "suffix":"", "period":"1944-06-24" }
 fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organi
- zations,o=acmehealth.org
+ zations,o=${USER_BASE_DN}
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirPersona: { "type":"social", "id":"Facebook", "primary":true, "value":"je
  ff.beck@beckola.com" }
@@ -205,7 +199,7 @@ fhirVisit: { "type":"page", "id":"urn:ping:fhir:visit:page", "timestamp":"20
 givenName: Sandra
 mail: sandra.beck@mailiantor.com
 o: Acme Health
-seeAlso: o=acmehealth.org
+seeAlso: o=${USER_BASE_DN}
 sn: Beck
 telephoneNumber: +1555-555-7777
 userPassword:: e1NTSEEyNTZ9WFM3NE9xWmh3UnA3MEtRVEk1MmhjeTF3KzBnOGRSRFJsZS91N
@@ -233,22 +227,22 @@ fhirEntitlement: { "type":"implicit", "id":"urn:ping:entitlement:fhir:app:CS
 fhirEntitlement: { "type":"explicit", "id":"urn:ping:entitlement:fhir:portal
  ", "value":[ "read", "search" ] }
 fhirLastLoginType: direct
-fhirName: { "use":"offical", "text":"name", "family":"Doe", "given":"John", 
+fhirName: { "use":"offical", "text":"name", "family":"Doe", "given":"John",
  "prefix":"Mr", "suffix":"Esq", "period":"1944-06-24" }
 fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organi
- zations,o=acmehealth.org
+ zations,o=${USER_BASE_DN}
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirRegion: USA
 fhirRole: { "type":"implicit", "id":"urn:ping:role:fhir:organization:admin",
   "value":[ "read", "search", "create", "modify" ] }
-fhirTelecom: { "system":"email", "value":"drjohn@acmehealth.org", "use":"wor
+fhirTelecom: { "system":"email", "value":"drjohn@${USER_BASE_DN}", "use":"wor
  k", "rank":"1", "period":"2010-01-01" }
 fhirTimeZone: EST
 fhirType: Practitioner
 givenName: John
-mail: drjohn@acmehealth.org
+mail: drjohn@${USER_BASE_DN}
 o: Acme Health
-seeAlso: o=acmehealth.org
+seeAlso: o=${USER_BASE_DN}
 sn: Doe
 telephoneNumber: +1555-555-9999
 userPassword:: e1NTSEEyNTZ9cWVnN0laNytmYjFOemFibjZ6WXpkaDh2bXRDVHZSZ2RxMU5zW
@@ -278,7 +272,7 @@ fhirLastLoginType: direct
 fhirName: { "use":"offical", "text":"name", "family":"Beck", "given":"Jeffre
  y", "prefix":"Mr", "suffix":"Esq", "period":"1944-06-24" }
 fhirOrganizationDN: entryUUID=5be3c2ea-66ea-4b51-8c97-e9af0e89e74c,ou=Organi
- zations,o=acmehealth.org
+ zations,o=${USER_BASE_DN}
 fhirOrganizationID: 5be3c2ea-66ea-4b51-8c97-e9af0e89e74c
 fhirRegion: USA
 fhirRole: { "type":"explicit", "id":"urn:ping:role:fhir:patient:patient", "v
@@ -290,12 +284,11 @@ fhirTelecom: { "system":"email", "value":"jeff.beck@beckola.com", "use":"hom
 fhirTimeZone: EST
 fhirType: CSR
 givenName: csr1
-mail: csr1@acmehealth.org
+mail: csr1@${USER_BASE_DN}
 o: Acme Health
-seeAlso: o=acmehealth.org
+seeAlso: o=${USER_BASE_DN}
 sn: CSR
 telephoneNumber: +1555-555-9999
 userPassword:: e1NTSEEyNTZ9ZUV3ZGpoSndkakZYbjRYL2JsK1BDMW9EOU9GNCtPL2RZS1phc
  kUzYkdtRlJXMitvVEhwUWZnPT0=
 pf-connected-identity: auth-source=pf-local-identity:user-id=csr1
-
