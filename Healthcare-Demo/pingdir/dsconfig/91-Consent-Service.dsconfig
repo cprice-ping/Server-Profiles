@@ -4,4 +4,4 @@ dsconfig set-http-servlet-extension-prop --extension-name Consent --set "access-
 
 dsconfig create-consent-definition --definition-name EMR-Access --set "display-name:Electronic Medical Record Access" --set "description:This definition is use to ask and collect consent for access to a Patient's Electronic Medical Record"
 
-dsconfig create-consent-definition-localization --definition-name EMR-Access --localization-name en --set version:1.0 --set "title-text:Access to Medical Record" --set 'data-text:Individuals \ Roles requesting access to your medical record' --set 'purpose-text:Used to allow Roles \ Individuals to have access to all or specific elements of your medical record'
+dsconfig create-consent-definition-localization --definition-name EMR-Access --localization-name en --set version:1.0 --set "title-text:Access to Medical Record" --set 'data-text:Individuals or Roles requesting access to your medical record' --set 'purpose-text:Used to allow Roles or Individuals to have access to all or specific elements of your medical record'
