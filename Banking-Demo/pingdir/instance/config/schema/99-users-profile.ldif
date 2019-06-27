@@ -3,6 +3,6 @@ objectClass: top
 objectClass: ldapSubentry
 objectClass: subschema
 cn: schema
-attributeTypes: ( fhirProfileVisit-OID NAME 'fhirProfileVisit' USAGE userApplications )
-attributeTypes: ( fhirDeviceFingerprint-OID NAME 'fhirDeviceFingerprint' USAGE userApplications )
-objectClasses: ( fhirProfile-OID NAME 'fhirProfile' DESC 'Aux class to contain the custom attributes needed for Progressive Profiling' AUXILIARY MAY fhirDeviceFingerprint )
+attributeTypes: ( ciamProfileVisit-OID NAME 'ciamProfileVisit' USAGE userApplications )
+attributeTypes: ( ciamDeviceFingerprint-OID NAME 'ciamDeviceFingerprint' USAGE userApplications )
+objectClasses: ( ciamProfile-OID NAME 'fhirProfile' DESC 'Aux class to contain the custom attributes needed for Progressive Profiling' AUXILIARY MAY ciamDeviceFingerprint )
