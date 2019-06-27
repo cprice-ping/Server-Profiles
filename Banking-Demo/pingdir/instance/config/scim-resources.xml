@@ -34,7 +34,7 @@
     <LDAPAdd>
       <!-- The template for the DN of new entries. -->
       <!-- SCIM or LDAP attributes may be referenced. -->
-      <DNTemplate>uid={uid},ou=people,o=acmehealth.org</DNTemplate>
+      <DNTemplate>uid={uid},ou=people,o=anybank.org</DNTemplate>
 
       <!-- Fixed Values to be inserted after the mapping is done. -->
       <fixedAttribute ldapAttribute="objectClass" onConflict="merge">
@@ -573,7 +573,7 @@
    ! that the User resource can also reference it, in the GroupsDerivedAttribute.
    !-->
   <LDAPSearch id="groupSearchParams">
-    <baseDN>o=acmehealth.org</baseDN>
+    <baseDN>o=anybank.org</baseDN>
     <filter>(|(objectClass=groupOfEntries)(objectClass=groupOfNames)(objectClass=groupOfUniqueNames)(objectClass=groupOfURLs))</filter>
     <!--
      ! Comment out the following line to map the SCIM Resource ID to DN rather
