@@ -61,7 +61,7 @@ is not recommended as it may interfere with expected server behavior.
     then 'has-logo' class should be added to 'ping-header' container.
     -->
     <div class="ping-header">
-	    <img src="assets/images/kp-logo.png" height="100px"><br/>
+	    <img src="assets/images/logo.png" height="100px"><br/>
         $templateMessages.getMessage($messageKeyPrefix, "title")
     </div>
     <!-- .ping-header -->
@@ -201,7 +201,7 @@ is not recommended as it may interfere with expected server behavior.
                 </div>
                 <!-- content-columns -->
                 #end
-                
+
                 <!-- #recaptcha -->
                 #if($captchaEnabled)
                     <div id="recaptcha"
@@ -215,7 +215,7 @@ is not recommended as it may interfere with expected server behavior.
                 <input type="hidden" name="$adapterIdField" id="$adapterIdField" value="$adapterId" />
             </form>
         </div><!-- .ping-body// blank div -->
-        
+
     </div><!-- .ping-body-container -->
 
     <div class="ping-footer-container">
@@ -234,8 +234,8 @@ is not recommended as it may interfere with expected server behavior.
 	function postForgotPassword() {
 
 		var target = "$forgotPasswordUrl";
-		#if ($enableRememberUsername)		
-		if (document.getElementById('rememberUsername').checked) 
+		#if ($enableRememberUsername)
+		if (document.getElementById('rememberUsername').checked)
 		{
 			target += "&prEnableRememberUsername";
 		}
