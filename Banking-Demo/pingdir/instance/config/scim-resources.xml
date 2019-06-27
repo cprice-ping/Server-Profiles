@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+anybank<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <scim-ldap:resources xmlns:scim-ldap="http://www.unboundid.com/scim-ldap">
 
   <!--
@@ -39,9 +39,9 @@
       <!-- Fixed Values to be inserted after the mapping is done. -->
       <fixedAttribute ldapAttribute="objectClass" onConflict="merge">
         <fixedValue>top</fixedValue>
-        <fixedValue>fhirUser</fixedValue>
-        <fixedValue>fhirPerson</fixedValue>
-        <fixedValue>fhirProfile</fixedValue>
+        <fixedValue>ciamUser</fixedValue>
+        <fixedValue>ciamPerson</fixedValue>
+        <fixedValue>ciamProfile</fixedValue>
 	<fixedValue>pf-connected-identities</fixedValue>
       </fixedAttribute>
     </LDAPAdd>
@@ -107,12 +107,12 @@
 
    <!-- ========================================================== -->
     <!-- added for AC tracking -->
-     <attribute name="fhirDeviceFingerprint" schema="urn:scim:schemas:core:1.0"
+     <attribute name="ciamDeviceFingerprint" schema="urn:scim:schemas:core:1.0"
                readOnly="false" required="false">
       <description>DeviceID tracked for user
         </description>
       <simple dataType="string" caseExact="false">
-        <mapping ldapAttribute="fhirDeviceFingerprint"/>
+        <mapping ldapAttribute="ciamDeviceFingerprint"/>
       </simple>
     </attribute>
 
@@ -127,10 +127,10 @@
 
 
    <attribute schema="urn:scim:schemas:core:1.0"
-               name="fhirVisit" readOnly="false" required="false">
+               name="ciamVisit" readOnly="false" required="false">
       <description>A list of visits performed by the User.</description>
-      <simpleMultiValued childName="fhirVisit" dataType="string">
-       <mapping ldapAttribute="fhirVisit"/>
+      <simpleMultiValued childName="ciamVisit" dataType="string">
+       <mapping ldapAttribute="ciamVisit"/>
        </simpleMultiValued>
      </attribute>
 
@@ -509,7 +509,7 @@
     <LDAPSearchRef idref="groupSearchParams"/>
 
     <LDAPAdd>
-      <DNTemplate>cn={cn},o=acmehealth.org</DNTemplate>
+      <DNTemplate>cn={cn},o=anybank.org</DNTemplate>
 
       <fixedAttribute ldapAttribute="objectClass" onConflict="merge">
         <fixedValue>top</fixedValue>
@@ -558,8 +558,8 @@
    ! the Group resource can also reference it, in the MembersDerivedAttribute.
    !-->
   <LDAPSearch id="userSearchParams">
-    <baseDN>ou=people,o=acmehealth.org</baseDN>
-    <filter>(objectClass=fhirPerson)</filter>
+    <baseDN>ou=people,o=anybank.org</baseDN>
+    <filter>(objectClass=ciamPerson)</filter>
     <!--
      ! Comment out the following line to map the SCIM Resource ID to DN rather
      ! than entryUUID.
