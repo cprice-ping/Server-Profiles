@@ -1,49 +1,61 @@
 version: "3.1"
 
 services:
-  pingaccess:
-    image: pingidentity/pingaccess:edge
-    command: wait-for pingfederate:9031 -t 420 -- entrypoint.sh start-server
-    environment: 
-      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
-      - SERVER_PROFILE_PATH=baseline/pingaccess
-      - VERBOSE=true
-    ports:
-      - 443:443
-      - 9000:9000
-    networks:
-      - pingnet-dmz
+#  pingaccess:
+#    image: pingidentity/pingaccess
+#    command: wait-for pingfederate:9031 -t 420 -- entrypoint.sh start-server
+#    environment: 
+#      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+#      - SERVER_PROFILE_PATH=baseline/pingaccess
+#      - VERBOSE=true
+#    ports:
+#      - 443:443
+#      - 9000:9000
+#    networks:
+#      - pingnet-dmz
 
   pingfederate:
-    image: pingidentity/pingfederate
+    image: pingidentity/pingfederate:9.3.0-edge
     command: wait-for pingdirectory:389 -t 300 -- entrypoint.sh start-server
     environment:
       - SERVER_PROFILE_URL=https://github.com/cprice-ping/Server-Profiles.git
-      - SERVER_PROFILE_PATH=Healthcare-Demo/pingfed
+      - SERVER_PROFILE_PATH=Banking-Demo/pingfed
     ports:
       - 9031:9031
       - 9999:9999
     networks:
       - pingnet
+      - pingnet-dmz
 
   pingdirectory:
     image: pingidentity/pingdirectory
     environment:
       - SERVER_PROFILE_URL=https://github.com/cprice-ping/Server-Profiles.git
-      - SERVER_PROFILE_PATH=Healthcare-Demo/pingdir
+      - SERVER_PROFILE_PATH=Banking-Demo/pingdir
     ports:
       - 1636:636
       - 1443:443
     networks:
       - pingnet
                     
+#  pingdatasync:
+#    image: pingidentity/pingdatasync:edge
+#    environment:
+#      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+#      - SERVER_PROFILE_PATH=simple-sync/pingdatasync
+#    ports:
+#      - 2636:636
+#      - 2443:443
+#    networks:
+#      - pingnet
+
   pingdataconsole:
     image: pingidentity/pingdataconsole
     ports:
       - 8080:8080
     networks:
       - pingnet
-      - pingnet-dmz
 
 networks:
     pingnet:
+    pingnet-dmz:
